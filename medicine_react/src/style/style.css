@@ -1,0 +1,122 @@
+.app {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointments {
+    text-align: left;
+    padding: 10px;
+    color: #000;
+}
+
+.appointments:nth-child(odd) {
+    background-color: #737373;
+}
+
+.appointments:nth-child(even) {
+    background-color: rgba(105, 105, 105, 0.87);
+}
+
+.appointments p {
+    margin: 0;
+}
+
+.patient {
+    text-align: left;
+    padding: 20px;
+}
+
+.patient:nth-child(odd) {
+    background-color: #737373;
+}
+
+.patient:nth-child(even) {
+    background-color: rgba(105, 105, 105, 0.87);
+}
+
+.investigation_form {
+    width: 100%;
+    padding: 10px;
+}
+
+.investigation_form textarea {
+    width: 100%;
+}
+
+.investigation_form:nth-child(odd) {
+    background-color: #737373;
+}
+
+.investigation_form:nth-child(even) {
+    background-color: rgba(105, 105, 105, 0.87);
+}
+
+.investigation_view {
+    width: 100%;
+    padding: 10px;
+}
+
+.investigation_view:nth-child(odd) {
+    background-color: #343434;
+    color: white;
+}
+
+.investigation_view:nth-child(even) {
+    background-color: rgba(105, 105, 105, 0.87);
+}
+
+.physicians-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.physician-card {
+    padding: 20px;
+    margin-top: 10px;
+    background: rgba(105, 105, 105, 0.87);
+    text-align: left;
+    width: 100%;
+}
+
+.select-hours {
+    display: block;
+}
+
+.investigations {
+
+}
+
+.investigation-title {
+    cursor: pointer;
+    background: rgba(176, 176, 176, 0.5);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.investigations-data {
+    border: 1px solid black;
+}
+
+.physicians-component {
+    width: 50%;
+    background: #afafaf;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    margin-bottom: 20px;
+}
+
+.user-profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-appointments {
+    width: 70%;
+}
