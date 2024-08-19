@@ -20,8 +20,8 @@ def get_grpc_client():
 
 app = FastAPI()
 
-SQL_SERVER_ENPOINT = "http://127.0.0.1:8080/api/medical_office"
-NOSQL_SERVER_ENPOINT = "http://127.0.0.1:8081/api/medical_office"
+SQL_SERVER_ENDPOINT = "http://127.0.0.1:8080/api/medical_office"
+NOSQL_SERVER_ENDPOINT = "http://127.0.0.1:8081/api/medical_office"
 NOSQL_PREFIXES = ["consultations"]
 SQL_PREFIXES = ["patients", "physicians", 'appointments']
 
@@ -42,11 +42,11 @@ app.add_middleware(
 def get_redirect_url(path: str):
     for prefix in NOSQL_PREFIXES:
         if path.startswith(prefix):
-            return f'{NOSQL_SERVER_ENPOINT}/{path}'
+            return f'{NOSQL_SERVER_ENDPOINT}/{path}'
 
     for prefix in SQL_PREFIXES:
         if path.startswith(prefix):
-            return f'{SQL_SERVER_ENPOINT}/{path}'
+            return f'{SQL_SERVER_ENDPOINT}/{path}'
     return ''
 
 
