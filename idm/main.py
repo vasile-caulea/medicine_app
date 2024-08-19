@@ -1,7 +1,6 @@
-import subprocess
+import logging
 import sys
 from concurrent import futures
-from time import sleep
 
 import grpc
 
@@ -12,8 +11,6 @@ from model.user_roles import UserRoles
 from service.service import IdmService
 from service_stub import service_pb2_grpc
 from utils import init_black_list, save_black_list
-
-import logging
 
 if __name__ == '__main__':
 
