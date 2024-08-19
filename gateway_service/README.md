@@ -1,6 +1,6 @@
 # Gateway service
 
-This service provides a gateway that routes requests to the existent servers (medicine_app, medicine_consults, and idm).
+This service is a FastAPI server that provides a gateway, routing requests to the existent servers (medicine_app, medicine_consults, and idm).
 The file <b>service.proto</b> defines the messages structures and the services provided by idm service.
 
 ## Dependencies
