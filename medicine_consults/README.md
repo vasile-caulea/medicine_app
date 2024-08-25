@@ -1,9 +1,9 @@
-# Medicine Application Service
+# Medicine Consultations
 
-This project hosts a server that contains the REST APIs for patients, physicians, and appointment requests. 
-The server uses the Spring Boot framework and establishes a connection to a relational database (MariaDB).
+This project hosts a server that provides the REST APIs for consultations, and investigations requests.
+The server uses the Spring Boot framework and establishes a connection to a non-relational database (MongoDB).
 
-## Running the application
+## Running the application 
 
 1. Reload the Maven Project.
 2. Generate the gRPC code by running `mvn compile`. After the code generation, mark the following directories as **Sources Root**:
