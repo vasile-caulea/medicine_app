@@ -6,3 +6,5 @@ The functionalities of this application manage:
 - a data set containing the consultations and investigations
 - a simple identity management module
 
+# Components
+![Component diagram](medicine_app.png)
